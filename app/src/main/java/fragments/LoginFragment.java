@@ -18,7 +18,7 @@ import com.example.onlineclothingshoppingapp.R;
 
 import static android.content.Context.MODE_PRIVATE;
 
-
+//fragments
 public class LoginFragment extends Fragment implements View.OnClickListener {
     private EditText etUsername,etPassword;
     private Button btnLogin;
