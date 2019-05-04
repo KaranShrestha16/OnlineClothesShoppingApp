@@ -36,11 +36,6 @@ public class RegistrationFragment extends Fragment implements View.OnClickListen
        return  view;
     }
 
-
-
-
-
-
     @Override
     public void onClick(View v) {
         SignUp();

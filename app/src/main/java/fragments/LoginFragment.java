@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +19,7 @@ import com.example.onlineclothingshoppingapp.R;
 
 import static android.content.Context.MODE_PRIVATE;
 
-//fragments
+
 public class LoginFragment extends Fragment implements View.OnClickListener {
     private EditText etUsername,etPassword;
     private Button btnLogin;
@@ -60,7 +61,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
             Toast.makeText(getActivity(), "Either username or password is incorrect", Toast.LENGTH_SHORT).show();
         }
     }
-    }
 
+    }
 
 
