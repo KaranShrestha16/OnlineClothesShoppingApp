@@ -14,6 +14,7 @@ import java.io.PrintStream;
 public class AddItemActivity extends AppCompatActivity {
     private EditText etItemName,etItemPrice,etItemImageName,etItemDescription;
     private Button btnAddItem;
+    //additem
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
