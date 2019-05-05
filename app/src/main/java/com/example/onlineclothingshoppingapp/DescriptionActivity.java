@@ -16,18 +16,18 @@ private TextView tvItemName,tvItemPrice,tvItemDescription;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_description);
 
-        imgView = findViewById(R.id.imgView);
+        imgView = findViewById(R.id.itemImage);
         tvItemName = findViewById(R.id.tvItemName);
         tvItemPrice = findViewById(R.id.tvItemPrice);
-        tvItemDescription = findViewById(R.id.etItemDescription);
+        tvItemDescription = findViewById(R.id.tvItemDescription);
 
 
         Bundle bundle = getIntent().getExtras();
         if(bundle != null){
             imgView.setImageResource(bundle.getInt("image"));
-            tvItemName.setText("Item Name:" + bundle.getString("item name"));
-            tvItemPrice.setText("Item Price" + bundle.getString("item price"));
-            tvItemDescription.setText("Item Description" + bundle.getString("item description"));
+            tvItemName.setText("Item Name :"+ bundle.getString("name"));
+            tvItemPrice.setText("Item Price :"+ bundle.getString("price"));
+            tvItemDescription.setText("Item Description :"+ bundle.getString("description"));
 
 
         }

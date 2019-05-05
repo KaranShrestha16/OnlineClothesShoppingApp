@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,42 +7,43 @@
     android:orientation="vertical"
     tools:context=".DescriptionActivity">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imgView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/shirt"
-        android:layout_margin="20dp"/>
-    <TextView
-        android:id="@+id/tvItemName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_toEndOf="@+id/imgView"
-        android:hint="Item Name"
-        android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/tvItemPrice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/tvItemName"
-        android:layout_toEndOf="@+id/imgView"
-        android:hint="Item Price"
-        android:textSize="20sp" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/itemImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="150dp"
+            />
+        <TextView
+            android:id="@+id/tvItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="50sp"
 
-    <TextView
-        android:id="@+id/tvItemDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/tvItemPrice"
-        android:layout_toEndOf="@+id/imgView"
-        android:hint="Item Description"
-        android:textSize="20sp" />
+            />
+        <TextView
+            android:id="@+id/tvItemPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="50sp"
 
-</RelativeLayout>
+            />
+        <TextView
+            android:id="@+id/tvItemDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="50sp"
+
+            />
+
+
+
+
+    </LinearLayout>

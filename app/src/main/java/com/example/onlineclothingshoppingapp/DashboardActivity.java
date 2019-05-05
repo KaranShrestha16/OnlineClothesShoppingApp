@@ -38,6 +38,8 @@ public class DashboardActivity extends AppCompatActivity {
         ItemsAdapter itemAdapter = new ItemsAdapter(this,itemsList);
         recyclerView.setAdapter(itemAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false));
+
+
         btnAddItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
