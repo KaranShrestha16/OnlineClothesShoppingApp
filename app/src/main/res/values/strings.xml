@@ -3,4 +3,17 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="imageList">
+        <item>bag</item>
+        <item>belt</item>
+        <item>coat</item>
+        <item>pant</item>
+        <item>shirt</item>
+        <item>shoe</item>
+        <item>shoes</item>
+        <item>sock</item>
+        <item>tie</item>
+        <item>tshirt</item>
+
+    </string-array>
 </resources>

@@ -17,7 +17,7 @@ import android.widget.Toast;
 import com.example.onlineclothingshoppingapp.DashboardActivity;
 import com.example.onlineclothingshoppingapp.R;
 
-import static android.content.Context.MODE_PRIVATE;
+
 
 
 public class LoginFragment extends Fragment implements View.OnClickListener {
@@ -49,11 +49,12 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
     }
 
     private void checkUser() {
-        SharedPreferences sharedPreferences = getActivity().getSharedPreferences("User",MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getActivity().getSharedPreferences("User", Context.MODE_PRIVATE);
         String username = sharedPreferences.getString("username","");
         String password = sharedPreferences.getString("password","");
         if(username.equals(etUsername.getText().toString()) &&
                 password.equals(etPassword.getText().toString())){
+            Toast.makeText(getActivity(), "Login Sucessful", Toast.LENGTH_SHORT).show();
            Intent I= new Intent(getActivity(), DashboardActivity.class);
            startActivity(I);
         }
