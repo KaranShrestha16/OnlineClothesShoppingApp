@@ -42,7 +42,7 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ItemViewHold
 
         itemViewHolder.itemImage.setImageResource(itemsProperties.getItemImage());
         itemViewHolder.tvItemName.setText(itemsProperties.getTvItemName());
-        itemViewHolder.tvItemPrice.setText(itemsProperties.getTvItemDescription());
+        itemViewHolder.tvItemPrice.setText(itemsProperties.getTvItemPrice());
 
         itemViewHolder.itemImage.setOnClickListener(new View.OnClickListener() {
             @Override
